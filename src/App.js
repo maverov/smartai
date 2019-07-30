@@ -8,11 +8,11 @@ import Particles from 'react-particles-js';
 
 const particlesOptions = {
   particles: {
-    line_linked: {
-      shadow: {
+    number: {
+      value: 60,
+      density: {
         enable: true,
-        color: "#3CA9D1",
-        blur: 5
+        value_area: 400
       }
     }
   }
@@ -21,7 +21,9 @@ const particlesOptions = {
 function App() {
   return (
     <div className="App">
-      <Particles className="particles" params={particlesOptions}/>
+      <Particles className='particles'
+        params={particlesOptions}
+      />
      <Navigation />
       <Logo />
       <Rank />
